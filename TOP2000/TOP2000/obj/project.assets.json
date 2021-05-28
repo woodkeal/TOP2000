@@ -5796,24 +5796,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\timho\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Dylan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\TOP2000\\TOP2000\\TOP2000\\TOP2000.csproj",
+      "projectUniqueName": "G:\\TOP2000\\TOP2000\\TOP2000\\TOP2000.csproj",
       "projectName": "TOP2000",
-      "projectPath": "C:\\TOP2000\\TOP2000\\TOP2000\\TOP2000.csproj",
-      "packagesPath": "C:\\Users\\timho\\.nuget\\packages\\",
-      "outputPath": "C:\\TOP2000\\TOP2000\\TOP2000\\obj\\",
+      "projectPath": "G:\\TOP2000\\TOP2000\\TOP2000\\TOP2000.csproj",
+      "packagesPath": "C:\\Users\\Dylan\\.nuget\\packages\\",
+      "outputPath": "G:\\TOP2000\\TOP2000\\TOP2000\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\timho\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Dylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5868,7 +5863,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
