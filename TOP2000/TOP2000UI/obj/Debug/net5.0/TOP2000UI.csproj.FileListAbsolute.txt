@@ -162,3 +162,8 @@ C:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\Artiest\Delete.cshtml.
 C:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\Artiest\Details.cshtml.g.cs
 C:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\Artiest\Edit.cshtml.g.cs
 C:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\Artiest\Index.cshtml.g.cs
+C:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\Songs\Create.cshtml.g.cs
+C:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\Songs\Delete.cshtml.g.cs
+C:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\Songs\Details.cshtml.g.cs
+C:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\Songs\Edit.cshtml.g.cs
+C:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\Songs\Index.cshtml.g.cs
