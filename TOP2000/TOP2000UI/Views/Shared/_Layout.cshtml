@@ -6,9 +6,22 @@
     <title>@ViewData["Title"] - TOP2000UI</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/main.css" />
 </head>
 <body>
     <header>
+        <div class="pt-4 pb-4 container">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <a asp-controller="Home" asp-action="Index">
+                        <img id="top-logo" src="~/Images/top2000logo.png" />
+                    </a>
+                </div>
+                <div>
+                    <img id="npo-logo" src="~/Images/npo2logo.png" />
+                </div>
+            </div>
+        </div>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TOP2000UI</a>
