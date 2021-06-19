@@ -3,10 +3,11 @@
     height: 100px;
 }
 
-.navbar {
+#header-nav {
+    color: #ffffff;
     background-color: #da0d14;
 }
 
-#header-nav * {
-    color: #ffffff;
+.navbar {
+    
 }

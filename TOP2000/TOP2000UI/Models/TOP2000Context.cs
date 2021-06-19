@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using TOP2000UI.ViewModels;
 
 #nullable disable
 
@@ -209,5 +210,7 @@ namespace TOP2000UI.Models
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+        public DbSet<TOP2000UI.ViewModels.Top2000ViewModel> Top2000ViewModel { get; set; }
     }
 }
