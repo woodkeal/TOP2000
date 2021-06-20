@@ -29,6 +29,9 @@ namespace TOP2000UI.Models
         public virtual DbSet<Lijst> Lijsts { get; set; }
         public virtual DbSet<Song> Songs { get; set; }
         public virtual DbSet<Top2000Jaar> Top2000Jaars { get; set; }
+        public virtual DbSet<spSelectAllTitles> spSelectAllTitles { get; set; }
+        public virtual DbSet<spSelectAllArtists> spSelectAllArtists { get; set; }
+        public virtual DbSet<spSelectSearchedArtist> spSelectSearchedArtist { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

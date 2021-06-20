@@ -1,0 +1,28 @@
+﻿@model IEnumerable<TOP2000UI.Models.spSelectAllArtists>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Artiest
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.naam)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

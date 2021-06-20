@@ -1,0 +1,40 @@
+﻿@model IEnumerable<TOP2000UI.Models.spSelectSearchedArtist>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+@using (Html.BeginForm())
+{
+    <input type="text" name="artistName" />
+    <input type="submit" />
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Artiest
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.naam)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.titel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.jaar)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

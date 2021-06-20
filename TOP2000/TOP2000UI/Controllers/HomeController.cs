@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TOP2000UI.Models;
 using TOP2000UI.ViewModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace TOP2000UI.Controllers
 {
@@ -51,6 +52,8 @@ namespace TOP2000UI.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
 
     }
 }
