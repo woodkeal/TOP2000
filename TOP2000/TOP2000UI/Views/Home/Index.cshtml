@@ -10,41 +10,41 @@
     <p>
         <a asp-action="Create">Create New</a>
     </p>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
+    <div class="list-display">
+        @*<div class="">
+            <ul>
+                <li>
                     @Html.DisplayNameFor(model => model.Positie)
-                </th>
-                <th>
+                </li>
+                <li>
                     @Html.DisplayNameFor(model => model.Title)
-                </th>
-                <th>
+                </li>
+                <li>
                     @Html.DisplayNameFor(model => model.ArtiestNaam)
-                </th>
-                <th>
+                </li>
+                <li>
                     @Html.DisplayNameFor(model => model.Jaar)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
+                </li>
+            </ul>
+        </div>*@
+                    
+        <ul>
             @foreach (var item in Model)
             {
-            <tr>
-                <td>
+            <li>
+                <div class="list-item">
                     @Html.DisplayFor(modelItem => item.Positie)
-                </td>
-                <td>
+                </div>
+                <div class="list-item">
                     @Html.DisplayFor(modelItem => item.Title)
-                </td>
-                <td>
+                </div>
+                <div class="list-item">
                     @Html.DisplayFor(modelItem => item.ArtiestNaam)
-                </td>
-                <td>
+                </div>
+                <div class="list-item">
                     @Html.DisplayFor(modelItem => item.Jaar)
-                </td>
-            </tr>
+                </div>
+            </li>
             }
-        </tbody>
-    </table>
+        </ul>
+    </div>

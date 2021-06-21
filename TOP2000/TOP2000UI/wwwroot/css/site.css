@@ -80,16 +80,12 @@ body {
     background-color: #da0d14;
 }
 
-.table td {
-    color: black;
+.list-display ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
 
-.table tr {
+.list-display ul li {
     height: 87px;
-    margin-bottom: 5px;
-    display: block;
-}
-
-.table tr {
-    background-color: #fff;
 }
