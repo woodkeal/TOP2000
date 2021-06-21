@@ -19,7 +19,7 @@ namespace TOP2000UI.Controllers
                 searchedArtist = dbContext.spSelectSearchedArtist.FromSqlRaw($"spSelectSearchedArtist {artistName}").ToList();
             } else
             {
-                searchedArtist = dbContext.spSelectSearchedArtist.FromSqlRaw($"spSelectSearchedArtist queen").ToList();
+                searchedArtist = dbContext.spSelectSearchedArtist.FromSqlRaw($"spSelectSearchedArtist abba").ToList();
             }
             
             return View(searchedArtist);
