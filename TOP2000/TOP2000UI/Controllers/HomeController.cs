@@ -26,16 +26,20 @@ namespace TOP2000UI.Controllers
             TOP2000Context top2000db = new TOP2000Context();
             List<Top2000ViewModel> top2000VMList = new List<Top2000ViewModel>();
             var top2000list = (
-                from Song in top2000db.Songs
-                join Artiests in top2000db.Artiests on Song.Artiestid equals Artiests.Artiestid
-                select new { Song.Songid, Song.Titel, Song.Jaar, Artiests.Naam }).ToList();
+                from Top2000Jaar in top2000db.Top2000Jaar
+                join Lijst in top2000db.Lists on Top2000Jaar.Jaar equals Lijst.Top2000jaar
+                join Songs in top2000db.Songs on Lijst.Songid equals Songs.Songid
+                join Artiests in top2000db.Artists on Songs.Artiestid equals Artiests.Artiestid
+                where Top2000Jaar.Jaar == Convert.ToInt32((DateTime.Now.Year - 2))
+                orderby Lijst.Positie ascending
+                select new {  Lijst.Positie, Songs.Titel, Songs.Jaar, Artiests.Naam }).ToList();
             foreach (var item in top2000list)
             {
                 Top2000ViewModel objcvm = new Top2000ViewModel();
+                objcvm.Positie = item.Positie;
                 objcvm.Title = item.Titel;
-                objcvm.Jaar = item.Jaar;
                 objcvm.ArtiestNaam = item.Naam;
-                objcvm.songid = item.Songid;
+                objcvm.Jaar = item.Jaar;
                 top2000VMList.Add(objcvm);
             }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -8,12 +9,12 @@ using TOP2000UI.Models;
 
 namespace TOP2000UI.ViewModels
 {
+    [Keyless]
     public class Top2000ViewModel
     {
+        public int Positie { get; set; }
         public string Title { get; set; }
-        public int? Jaar { get; set; }
         public string ArtiestNaam { get; set; }
-        [Key]
-        public int songid { get; set; }
+        public int? Jaar { get; set; }
     }
 }

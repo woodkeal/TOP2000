@@ -81,5 +81,15 @@ body {
 }
 
 .table td {
-    color: #fff;
+    color: black;
+}
+
+.table tr {
+    height: 87px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.table tr {
+    background-color: #fff;
 }

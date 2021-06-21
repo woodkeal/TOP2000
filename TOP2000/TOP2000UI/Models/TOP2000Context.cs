@@ -18,7 +18,7 @@ namespace TOP2000UI.Models
         {
         }
 
-        public virtual DbSet<Artiest> Artiests { get; set; }
+        public virtual DbSet<Artiest> Artists { get; set; }
         public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
         public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; }
         public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
@@ -26,9 +26,9 @@ namespace TOP2000UI.Models
         public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
         public virtual DbSet<AspNetUserRole> AspNetUserRoles { get; set; }
         public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; }
-        public virtual DbSet<Lijst> Lijsts { get; set; }
+        public virtual DbSet<Lijst> Lists { get; set; }
         public virtual DbSet<Song> Songs { get; set; }
-        public virtual DbSet<Top2000Jaar> Top2000Jaars { get; set; }
+        public virtual DbSet<Top2000Jaar> Top2000Jaar { get; set; }
         public virtual DbSet<spSelectAllTitles> spSelectAllTitles { get; set; }
         public virtual DbSet<spSelectAllArtists> spSelectAllArtists { get; set; }
         public virtual DbSet<spSelectSearchedArtist> spSelectSearchedArtist { get; set; }

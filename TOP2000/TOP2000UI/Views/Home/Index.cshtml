@@ -14,13 +14,16 @@
         <thead>
             <tr>
                 <th>
+                    @Html.DisplayNameFor(model => model.Positie)
+                </th>
+                <th>
                     @Html.DisplayNameFor(model => model.Title)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Jaar)
+                    @Html.DisplayNameFor(model => model.ArtiestNaam)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.ArtiestNaam)
+                    @Html.DisplayNameFor(model => model.Jaar)
                 </th>
                 <th></th>
             </tr>
@@ -28,17 +31,20 @@
         <tbody>
             @foreach (var item in Model)
             {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Title)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Jaar)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ArtiestNaam)
-                    </td>
-                </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Positie)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ArtiestNaam)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Jaar)
+                </td>
+            </tr>
             }
         </tbody>
     </table>
