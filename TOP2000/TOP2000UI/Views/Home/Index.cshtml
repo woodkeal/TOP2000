@@ -1,17 +1,14 @@
 ﻿@model IEnumerable<TOP2000UI.ViewModels.Top2000ViewModel>
 
-    @{
-        ViewData["Title"] = "Index";
-        Layout = "~/Views/Shared/_Layout.cshtml";
-    }
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-    <h1>Index</h1>
+<h1>@Html.DisplayFor(modelItem => Model.First().ListYear)</h1>
 
-    <p>
-        <a asp-action="Create">Create New</a>
-    </p>
-    <div class="list-display">
-        @*<div class="">
+<div class="list-display">
+    @*<div class="">
             <ul>
                 <li>
                     @Html.DisplayNameFor(model => model.Positie)
@@ -27,24 +24,24 @@
                 </li>
             </ul>
         </div>*@
-                    
-        <ul>
-            @foreach (var item in Model)
-            {
+
+    <ul>
+        @foreach (var item in Model)
+        {
             <li>
-                <div class="list-item">
-                    @Html.DisplayFor(modelItem => item.Positie)
+                <div class="list-item position">
+                    @Html.DisplayFor(modelItem => item.Position)
                 </div>
-                <div class="list-item">
+                <div class="list-item title">
                     @Html.DisplayFor(modelItem => item.Title)
                 </div>
-                <div class="list-item">
-                    @Html.DisplayFor(modelItem => item.ArtiestNaam)
+                <div class="list-item artist-name">
+                    @Html.DisplayFor(modelItem => item.ArtistName)
                 </div>
-                <div class="list-item">
-                    @Html.DisplayFor(modelItem => item.Jaar)
+                <div class="list-item year">
+                    @Html.DisplayFor(modelItem => item.Year)
                 </div>
             </li>
-            }
-        </ul>
-    </div>
+        }
+    </ul>
+</div>

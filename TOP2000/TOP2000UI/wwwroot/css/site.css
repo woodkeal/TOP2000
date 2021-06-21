@@ -82,10 +82,35 @@ body {
 
 .list-display ul{
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
 }
 
 .list-display ul li {
     height: 87px;
+    display: flex;
+    background-color: #fff;
+    color: black;
+    margin-bottom: 4px;
 }
+
+.position {
+    flex: 1;
+}
+
+.title {
+    flex: 3;
+}
+
+.artist-name {
+    flex: 3;
+}
+
+.year {
+    flex: 1;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+

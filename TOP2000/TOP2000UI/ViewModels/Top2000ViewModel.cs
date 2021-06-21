@@ -12,9 +12,10 @@ namespace TOP2000UI.ViewModels
     [Keyless]
     public class Top2000ViewModel
     {
-        public int Positie { get; set; }
+        public int Position { get; set; }
         public string Title { get; set; }
-        public string ArtiestNaam { get; set; }
-        public int? Jaar { get; set; }
+        public string ArtistName { get; set; }
+        public int? Year { get; set; }
+        public int ListYear { get; set; }
     }
 }

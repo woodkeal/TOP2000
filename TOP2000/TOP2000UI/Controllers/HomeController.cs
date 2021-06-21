@@ -32,14 +32,16 @@ namespace TOP2000UI.Controllers
                 join Artiests in top2000db.Artists on Songs.Artiestid equals Artiests.Artiestid
                 where Top2000Jaar.Jaar == Convert.ToInt32((DateTime.Now.Year - 2))
                 orderby Lijst.Positie ascending
-                select new {  Lijst.Positie, Songs.Titel, Songs.Jaar, Artiests.Naam }).ToList();
+                select new {  Lijst.Positie, Songs.Titel, Artiests.Naam, Songs.Jaar, ListYear = Top2000Jaar.Jaar }).ToList();
             foreach (var item in top2000list)
             {
                 Top2000ViewModel objcvm = new Top2000ViewModel();
-                objcvm.Positie = item.Positie;
+                objcvm.Position = item.Positie;
                 objcvm.Title = item.Titel;
-                objcvm.ArtiestNaam = item.Naam;
-                objcvm.Jaar = item.Jaar;
+                objcvm.ArtistName = item.Naam;
+                objcvm.Year = item.Jaar;
+                objcvm.ListYear = item.ListYear;
+
                 top2000VMList.Add(objcvm);
             }
 
