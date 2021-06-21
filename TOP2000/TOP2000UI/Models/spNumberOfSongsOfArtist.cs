@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 namespace TOP2000UI.Models
 {
     [Keyless]
-    public class spNumberOfSongsArtist {
-        public string Naam { get; set; }
-        public int Nummers { get; set; }
+    public class spNumberOfSongsOfArtist {
+        public string naam { get; set; }
+        public int nummers { get; set; }
     }
 }

@@ -531,4 +531,4 @@ D:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\TOP2000UI.dll
 D:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\ref\TOP2000UI.dll
 D:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\TOP2000UI.pdb
 D:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\TOP2000UI.genruntimeconfig.cache
-D:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\spNumberOfSongsArtist\Index.cshtml.g.cs
+D:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\spNumberOfSongsOfArtist\Index.cshtml.g.cs

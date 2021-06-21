@@ -8,12 +8,12 @@ using TOP2000UI.Models;
 
 namespace TOP2000UI.Controllers
 {
-    public class spNumberOfSongsArtistController : Controller
+    public class spNumberOfSongsOfArtistController : Controller
     {
         public IActionResult Index()
         {
             var dbContext = new TOP2000Context();
-            var Number = dbContext.spNumberofSongsArtist.FromSqlRaw($"spNumberOfSongsArtist").ToList();
+            var Number = dbContext.spNumberofSongsOfArtist.FromSqlRaw($"spNumberOfSongsOfArtist").ToList();
             return View(Number);
         }
     }

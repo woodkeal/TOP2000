@@ -32,7 +32,7 @@ namespace TOP2000UI.Models
         public virtual DbSet<spSelectAllTitles> spSelectAllTitles { get; set; }
         public virtual DbSet<spSelectAllArtists> spSelectAllArtists { get; set; }
         public virtual DbSet<spSelectSearchedArtist> spSelectSearchedArtist { get; set; }
-        public virtual DbSet<spNumberOfSongsArtist> spNumberofSongsArtist { get; set; }
+        public virtual DbSet<spNumberOfSongsOfArtist> spNumberofSongsOfArtist { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

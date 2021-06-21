@@ -1,0 +1,36 @@
+﻿@model IEnumerable<TOP2000UI.Models.spNumberOfSongsOfArtist>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.naam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nummers)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.naam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nummers)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
