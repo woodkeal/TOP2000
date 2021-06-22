@@ -82,6 +82,7 @@ ul {
 #header-nav {
     color: #ffffff;
     background-color: #da0d14;
+    margin: 0px;
 }
 
 .list ul li {
@@ -91,33 +92,33 @@ ul {
 }
 
 .list-info {
-    display: flex;
     background-color: #da0d14;
     margin-bottom: 4px;
-}
-
-.list {
-
 }
 
 .list-info ul {
     list-style-type: none;
 }
 
-.list-info ul li {
-    height: 87px;
+.list-info span {
+    display:inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.list-info form {
+    padding: 10px 20px;
 }
 
 .list ul{
     list-style-type: none;
 }
 
-.list ul li {
-    height: 87px;
-}
 
 .list-data ul li {
     margin-bottom: 4px;
+    height: 87px;
 }
 
 .play {
@@ -126,7 +127,6 @@ ul {
 
 .data-play {
     background-color: #da0d14;
-    display: flex;
     justify-content: center;
 }
 
@@ -137,7 +137,6 @@ ul {
 
 .position {
     flex: 1;
-    display: flex;
     justify-content: center;
 }
 
