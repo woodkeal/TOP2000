@@ -9,8 +9,8 @@ namespace TOP2000UI.Models
     [Keyless]
     public class spSelectSearchedArtist
     {
-        public string naam { get; set; }
-        public string titel { get; set; }
-        public int jaar { get; set; }
+        public string Name { get; set; }
+        public string Title { get; set; }
+        public int Year { get; set; }
     }
 }

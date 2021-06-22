@@ -71,6 +71,10 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
+ul {
+    padding: 0;
+}
+
 #npo-logo {
     height: 100px;
 }
@@ -80,28 +84,78 @@ body {
     background-color: #da0d14;
 }
 
-.list-display ul{
+.list ul li {
+    background-color: #fff;
+    display: flex;
+    color: black;
+}
+
+.list-info {
+    display: flex;
+    background-color: #da0d14;
+    margin-bottom: 4px;
+}
+
+.list {
+
+}
+
+.list-info ul {
     list-style-type: none;
 }
 
-.list-display ul li {
+.list-info ul li {
     height: 87px;
-    display: flex;
-    background-color: #fff;
-    color: black;
+}
+
+.list ul{
+    list-style-type: none;
+}
+
+.list ul li {
+    height: 87px;
+}
+
+.list-data ul li {
     margin-bottom: 4px;
+}
+
+.play {
+    flex: 1;
+}
+
+.data-play {
+    background-color: #da0d14;
+    display: flex;
+    justify-content: center;
+}
+
+#Capa_1 {
+    fill: white;
+    height: 50px;
 }
 
 .position {
     flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.data-position {
+    background-color: #171f26;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .title {
     flex: 3;
+    padding-left: 15px;
 }
 
 .artist-name {
     flex: 3;
+    padding-left: 15px;
 }
 
 .year {
@@ -111,6 +165,4 @@ body {
 .list-item {
     display: flex;
     align-items: center;
-    padding-left: 15px;
 }
-
