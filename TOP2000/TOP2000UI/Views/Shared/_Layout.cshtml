@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header>
-        <div class="pt-4 pb-4 container d-flex justify-content-between">
-            <a asp-controller="Home" asp-action="Index">
-                <img id="top-logo" src="~/Images/top2000logo.png" />
-            </a>
-            <img id="npo-logo" src="~/Images/npo2logo.png" />
+    <header id="main-header">
+        <div class="header-logo">
+            <div class="pt-3 pb-3 container d-flex justify-content-between ">
+                <a asp-controller="Home" asp-action="Index">
+                    <img id="top-logo" src="~/Images/top2000logo.png" />
+                </a>
+                <img id="npo-logo" src="~/Images/npo2logo.png" />
+            </div>
         </div>
+        @*
+        <div class="header-banner-container">
+            <img src="~/Images/header.jpg" />
+        </div>
+        *@
         <nav id="header-nav" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow">
             <div class="container">
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -46,6 +53,7 @@
             </div>
         </nav>
     </header>
+    
     <div class="bg-dark">
         <div class="container">
             <main role="main" class="pb-3 row pt-3">
@@ -55,7 +63,6 @@
                 <div class="col-3">
                     IAUYGFSTAGYHDUASDYUGAUIHDADH
                 </div>
-                
             </main>
         </div>
     </div>
