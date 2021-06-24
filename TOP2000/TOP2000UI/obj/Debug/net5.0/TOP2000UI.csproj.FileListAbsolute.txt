@@ -533,3 +533,5 @@ D:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\TOP2000UI.pdb
 D:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\TOP2000UI.genruntimeconfig.cache
 D:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\spNumberOfSongsOfArtist\Index.cshtml.g.cs
 C:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\spNumberOfSongsOfArtist\Index.cshtml.g.cs
+C:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\spSelectListingOnYear\Index.cshtml.g.cs
+C:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\spSelectTop10ListingOnYear\Index.cshtml.g.cs
