@@ -6,20 +6,28 @@
 }
 
 
-<div>
-    <h1>@Html.DisplayFor(modelItem => Model.First().ListYear)</h1>
-    <div class="list list-info">
-            @Html.DisplayNameFor(model => model.Position)
-        </div>
-        <div class="title">
-            @Html.DisplayNameFor(model => model.Title)
-        </div>
-        <div class="artist-name">
-            @Html.DisplayNameFor(model => model.ArtistName)
-        </div>
-        <div class="year">
-            @Html.DisplayNameFor(model => model.Year)
-        </div>
+<div class="list-info">
+    <span>Lijst @Html.DisplayFor(modelItem => Model.First().ListYear)</span>
+    <div class="list">
+        <ul>
+            <li>
+                <div class="play">
+
+                </div>
+                <div class="position">
+                    nr.
+                </div>
+                <div class="title">
+                    titel
+                </div>
+                <div class="artist-name">
+                    artiest
+                </div>
+                <div class="year">
+                    jaar
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
 

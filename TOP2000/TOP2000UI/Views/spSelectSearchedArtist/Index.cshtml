@@ -5,18 +5,28 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="list list-info">
-    <div class="play">
-
-    </div>
-    <div class="title">
-        @Html.DisplayNameFor(model => model.Title)
-    </div>
-    <div class="artist-name">
-        @Html.DisplayNameFor(model => model.Name)
-    </div>
-    <div class="year">
-        @Html.DisplayNameFor(model => model.Year)
+<div class="list-info">
+    @using (Html.BeginForm())
+    {
+        <input type="text" name="artistName" />
+        <input type="submit" />
+    }
+    <div class="list">
+        <ul>
+            <li>
+                <div class="play">
+                </div>
+                <div class="title">
+                    titel
+                </div>
+                <div class="artist-name">
+                    artiest
+                </div>
+                <div class="year">
+                    jaar
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
 <div class="list list-data">
