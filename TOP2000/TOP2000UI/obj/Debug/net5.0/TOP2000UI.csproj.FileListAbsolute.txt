@@ -547,3 +547,5 @@ G:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\spNumberOfSongsOfArtis
 G:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\spSelectAllArtists\Index.cshtml.g.cs
 G:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\spSelectAllTitles\Index.cshtml.g.cs
 G:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\spSelectSearchedArtist\Index.cshtml.g.cs
+G:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\spSelectListingOnYear\Index.cshtml.g.cs
+G:\TOP2000\TOP2000\TOP2000UI\obj\Debug\net5.0\Razor\Views\spSelectTop10ListingOnYear\Index.cshtml.g.cs

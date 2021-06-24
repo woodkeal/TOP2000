@@ -33,6 +33,8 @@ namespace TOP2000UI.Models
         public virtual DbSet<spSelectAllArtists> spSelectAllArtists { get; set; }
         public virtual DbSet<spSelectSearchedArtist> spSelectSearchedArtist { get; set; }
         public virtual DbSet<spNumberOfSongsOfArtist> spNumberofSongsOfArtist { get; set; }
+        public virtual DbSet<spSelectListingOnYear> spSelectListingOnYear { get; set; }
+        public virtual DbSet<spTop10ListingOnYear> spTop10ListingOnYear { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
