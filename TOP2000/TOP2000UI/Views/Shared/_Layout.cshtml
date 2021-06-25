@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header id="main-header">
-        <div class="header-logo">
+        <div id="main-header" class="header-logo sticky-header">
             <div class="pt-3 pb-3 container d-flex justify-content-between ">
                 <a asp-controller="Home" asp-action="Index">
                     <img id="top-logo" src="~/Images/top2000logo.png" />
@@ -17,12 +16,10 @@
                 <img id="npo-logo" src="~/Images/npo2logo.png" />
             </div>
         </div>
-        @*
         <div class="header-banner-container">
             <img src="~/Images/header.jpg" />
         </div>
-        *@
-        <nav id="header-nav" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow">
+        <nav id="header-nav" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow sticky-header">
             <div class="container">
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
@@ -52,7 +49,6 @@
                 </div>
             </div>
         </nav>
-    </header>
     
     <div class="bg-dark">
         <div class="container">
@@ -66,75 +62,95 @@
                         <strong class="newsText">Nieuwsartikelen</strong>
                         <div class="newsCollum">
                             <!--Artikel 1-->
+                            <a href="https://www.nporadio2.nl/top2000/nieuws/31054/elton-john-kondigt-allerlaatste-show-in-nederland-aan">
+                                <div class="newsCard">
+                                    <img src="~/Images/newsArticals/Elthon John.jpg">
+                                    <div class="arTitle">
+                                        <p>Elton John kondigt allerlaatste show in Nederland aan</p>
+                                    </div>
+                            </a>
+                        </div>
+                        <!--Artikel 2-->
+                        <a href="https://www.nporadio2.nl/top2000/nieuws/31028/wie-heeft-de-langste-in-de-top-2000-2020">
                             <div class="newsCard">
-                                <a href="https://www.nporadio2.nl/top2000/nieuws/31054/elton-john-kondigt-allerlaatste-show-in-nederland-aan"><img src="~/Images/newsArticals/Elthon John.jpg"></a>
-                                <div class="arTitle">
-                                    <p>Elton John kondigt allerlaatste show in Nederland aan</p>
-                                </div>
-                            </div>
-                            <!--Artikel 2-->
-                            <div class="newsCard">
-                                <a href="https://www.nporadio2.nl/top2000/nieuws/31028/wie-heeft-de-langste-in-de-top-2000-2020"><img src="~/Images/newsArticals/TOP2000AR.jpg"></a>
+                                <img src="~/Images/newsArticals/TOP2000AR.jpg">
                                 <div class="arTitle">
                                     <p>Wie heeft de langste in de NPO Radio 2 Top 2000?</p>
                                 </div>
                             </div>
-                            <!--Artikel 3-->
+                        </a>
+                        <!--Artikel 3-->
+                        <a href="https://www.nporadio2.nl/top2000/nieuws/31029/everything-i-do-i-do-it-for-you-van-bryan-adams-had-bijna-niet-bestaan">
                             <div class="newsCard">
-                                <a href="https://www.nporadio2.nl/top2000/nieuws/31029/everything-i-do-i-do-it-for-you-van-bryan-adams-had-bijna-niet-bestaan"><img src="~/Images/newsArticals/Bryan Adams.jpg"></a>
+                                <img src="~/Images/newsArticals/Bryan Adams.jpg">
                                 <div class="arTitle">
                                     <p>(Everything I Do) I Do It For You van Bryan Adams had bijna niet bestaan</p>
                                 </div>
                             </div>
-                            <!--Artikel 4-->
+                        </a>
+                        <!--Artikel 4-->
+                        <a href="https://www.nporadio2.nl/top2000/nieuws/31001/vijf-albumparels-van-paul-mccartney-die-je-moet-horen">
                             <div class="newsCard">
-                                <a href="https://www.nporadio2.nl/top2000/nieuws/31001/vijf-albumparels-van-paul-mccartney-die-je-moet-horen"><img src="~/Images/newsArticals/Paul McCartney.jpg"></a>
+                                <img src="~/Images/newsArticals/Paul McCartney.jpg">
                                 <div class="arTitle">
                                     <p>Vijf albumparels van Paul McCartney die je moet horen</p>
                                 </div>
                             </div>
-                            <!--Artikel 5-->
+                        </a>
+                        <!--Artikel 5-->
+                        <a href="https://www.nporadio2.nl/top2000/nieuws/31011/diana-ross-kondigt-voor-het-eerst-in-vijftien-jaar-nieuw-album-aan">
                             <div class="newsCard">
-                                <a href="https://www.nporadio2.nl/top2000/nieuws/31011/diana-ross-kondigt-voor-het-eerst-in-vijftien-jaar-nieuw-album-aan"><img src="~/Images/newsArticals/Diana Ross.jpg"></a>
+                                <img src="~/Images/newsArticals/Diana Ross.jpg">
                                 <div class="arTitle">
                                     <p>Diana Ross kondigt voor het eerst in vijftien jaar nieuw album aan</p>
                                 </div>
                             </div>
-                            <!--Artikel 6-->
+                        </a>
+                        <!--Artikel 6-->
+                        <a href="https://www.nporadio2.nl/top2000/nieuws/30996/de-vijf-grootste-hits-van-2pac">
                             <div class="newsCard">
-                                <a href="https://www.nporadio2.nl/top2000/nieuws/30996/de-vijf-grootste-hits-van-2pac"><img src="~/Images/newsArticals/2Pac.png"></a>
+                                <img src="~/Images/newsArticals/2Pac.png">
                                 <div class="arTitle">
                                     <p>De vijf grootste hits van 2Pac</p>
                                 </div>
                             </div>
-                            <!--Artikel 7-->
+                        </a>
+                        <!--Artikel 7-->
+                        <a href="https://www.nporadio2.nl/top2000/nieuws/30968/eric-clapton-niet-op-het-podium-maar-wel-op-tv">
                             <div class="newsCard">
-                                <a href="https://www.nporadio2.nl/top2000/nieuws/30968/eric-clapton-niet-op-het-podium-maar-wel-op-tv"><img src="~/Images/newsArticals/Eric Clapton.jpg"></a>
+                                <img src="~/Images/newsArticals/Eric Clapton.jpg">
                                 <div class="arTitle">
                                     <p>Kijktip! Eric Clapton live tijdens Crossroads Guitar Festival</p>
                                 </div>
                             </div>
-                            <!--Artikel 8-->
+                        </a>
+                        <!--Artikel 8-->
+                        <a href="https://www.nporadio2.nl/top2000/nieuws/30956/metallica-trotseert-de-bliksem-op-pinkpop-2014">
                             <div class="newsCard">
-                                <a href="https://www.nporadio2.nl/top2000/nieuws/30956/metallica-trotseert-de-bliksem-op-pinkpop-2014"><img src="~/Images/newsArticals/Metallica.jpg"></a>
+                                <img src="~/Images/newsArticals/Metallica.jpg">
                                 <div class="arTitle">
                                     <p>Metallica trotseert de bliksem op Pinkpop 2014</p>
                                 </div>
                             </div>
-                            <!--Artikel 9-->
+                        </a>
+                        <!--Artikel 9-->
+                        <a href="https://www.nporadio2.nl/top2000/nieuws/30941/prince-speelt-purple-rain-eerste-keer-live-2">
                             <div class="newsCard">
-                                <a href="https://www.nporadio2.nl/top2000/nieuws/30941/prince-speelt-purple-rain-eerste-keer-live-2"><img src="~/Images/newsArticals/Prince.jpg"></a>
+                                <img src="~/Images/newsArticals/Prince.jpg">
                                 <div class="arTitle">
                                     <p>Prince speelt Purple Rain eerste keer live</p>
                                 </div>
                             </div>
-                            <!--Artikel 10-->
+                        </a>
+                        <!--Artikel 10-->
+                        <a href="https://www.nporadio2.nl/top2000/nieuws/30893/legendarisch-live-iron-maiden-voor-een-kwart-miljoen-uitzinnige-brazilianen">
                             <div class="newsCard">
-                                <a href="https://www.nporadio2.nl/top2000/nieuws/30893/legendarisch-live-iron-maiden-voor-een-kwart-miljoen-uitzinnige-brazilianen"><img src="~/Images/newsArticals/Iron Maiden.jpg"></a>
+                                <img src="~/Images/newsArticals/Iron Maiden.jpg">
                                 <div class="arTitle">
                                     <p>Legendarisch Live: Iron Maiden voor een kwart miljoen uitzinnige Brazilianen</p>
                                 </div>
                             </div>
+                        </a>
                         </div>
                     </div>
                 </div>

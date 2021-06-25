@@ -102,18 +102,31 @@ ul {
 #header-nav {
     color: #ffffff;
     background-color: #da0d14;
-    margin: 0px;
+    top: 82px;
 }
 
 #main-header {
+    top: 0;
+}
+
+.sticky-header {
     position: -webkit-sticky;
     position: sticky;
     z-index: 999999;
-    top: 0;
 }
 
 .header-logo {
     background-color: #fff;
+}
+
+.header-banner-container {
+    overflow: hidden;
+    height: 245px;
+    object-fit: cover;
+}
+
+.header-banner-container img{
+    object-position: -80px 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -229,6 +242,7 @@ ul {
     font-weight: bold;
     font-size: 0.5em;
     left: 10px;
+    color: white;
 }
 
 .newsCard {
