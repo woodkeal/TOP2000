@@ -14,12 +14,16 @@ namespace TOP2000UI.Controllers
         {
             var dbContext = new TOP2000Context();
             List<spTop10ListingOnYear> top10listingOnYearList = new List<spTop10ListingOnYear>();
-         
-                top10listingOnYearList = dbContext.spTop10ListingOnYear.FromSqlRaw($"spTop10ListingOnYear {listYear}").ToList();
-          
-        
 
-            
+            if (listYear != 0)
+            {
+                top10listingOnYearList = dbContext.spTop10ListingOnYear.FromSqlRaw($"spTop10ListingOnYear {listYear}").ToList();
+            }
+            else
+            {
+                top10listingOnYearList = dbContext.spTop10ListingOnYear.FromSqlRaw($"spTop10ListingOnYear 2019").ToList();
+            }
+
             return View(top10listingOnYearList);
         }
         [HttpPost]

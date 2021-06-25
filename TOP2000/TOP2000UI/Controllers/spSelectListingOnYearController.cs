@@ -15,9 +15,17 @@ namespace TOP2000UI.Controllers
             var dbContext = new TOP2000Context();
             List<spSelectListingOnYear> listingOnYearList = new List<spSelectListingOnYear>();
 
-            listingOnYearList = dbContext.spSelectListingOnYear.FromSqlRaw($"spSelectListingOnYear {listYear}").ToList();
-         
-          
+            if (listYear != 0)
+            {
+                listingOnYearList = dbContext.spSelectListingOnYear.FromSqlRaw($"spSelectListingOnYear {listYear}").ToList();
+            }
+            else
+            {
+                listingOnYearList = dbContext.spSelectListingOnYear.FromSqlRaw($"spSelectListingOnYear 2019").ToList();
+            }
+
+
+
 
             return View(listingOnYearList);
         }
@@ -25,7 +33,7 @@ namespace TOP2000UI.Controllers
         [HttpPost]
         public ActionResult YearList(string listYear)
         {
-        
+
             int yearlist = Convert.ToInt32(listYear);
             return View(Index(yearlist));
         }

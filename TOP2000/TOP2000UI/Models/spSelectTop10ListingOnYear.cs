@@ -14,6 +14,6 @@ namespace TOP2000UI.Models
         public int Position { get; set; }
         public int Year { get; set; }
         public string Title { get; set; }
-  
+        public int ListYear { get; set; }
     }
 }
