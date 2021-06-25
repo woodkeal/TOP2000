@@ -68,7 +68,7 @@ body {
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+  line-height: 40px; /* Vertically center the text there */
 }
 
 /* Anti bootstrap 
@@ -80,6 +80,7 @@ body {
 
 ul {
     padding: 0;
+    list-style-type: none;
 }
 
 .box-shadow {
@@ -91,6 +92,9 @@ ul {
 }
 /* Custom CSS 
 ------------------------- */
+.custom-background {
+    background-color: #22282E;
+}
 #npo-logo {
     height: 50px;
 }
@@ -262,6 +266,22 @@ ul {
 }
 
 /*---------------Footer css -----------------*/
-#Footercontainer{
-    padding-top: 10px;
+.footer {
+    background-color: #22282E;
 }
+#Footercontainer{
+    padding-top: 20px;
+    position: relative;
+}
+.vertical a{
+    color: white;
+}
+.footer img{
+    width: 300px;
+    height: 100%; 
+    position: absolute;
+    right: 0;
+    transform: scaleX(-1);
+   
+}
+
