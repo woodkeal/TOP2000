@@ -246,3 +246,8 @@ ul {
     margin-bottom: 50px;
     font-size: 30px;
 }
+
+/*---------------Footer css -----------------*/
+#Footercontainer{
+    padding-top: 10px;
+}
