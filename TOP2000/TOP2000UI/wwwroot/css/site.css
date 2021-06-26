@@ -141,6 +141,7 @@ ul {
     color: #ffffff;
     background-color: #da0d14;
     top: 82px;
+    height: 50px;
 }
 
 #main-header {
@@ -163,17 +164,17 @@ ul {
     object-fit: cover;
 }
 
-    .header-banner-container img {
-        object-position: -80px 0;
-    }
+.header-banner-container img {
+    object-position: -80px 0;
+}
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
 }
 
-    .navbar-light .navbar-nav .nav-link:hover {
-        color: rgba(255,255,255,.5);
-    }
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,.5);
+}
 
 .list ul li {
     background-color: #fff;
@@ -190,6 +191,7 @@ ul {
 
 .list-info-bar {
     height: 70px;
+    padding: 0 20px;
 }
 
 .list-info ul {
@@ -236,12 +238,17 @@ ul {
     font-size: 33px;
     margin-bottom: 15px;
     background-color: #171f26;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
+    padding: 0 15px;
 }
 
-.arTitle{
+#sideCol span {
+    padding-bottom: 10px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.arTitle {
     position: absolute;
     bottom: 20px;
     font-weight: bold;
@@ -261,23 +268,22 @@ ul {
     height: 180px;
 }
 
-.newsText{
-    margin-bottom: 50px;
-    font-size: 30px;
-}
-
 /*---------------Footer css -----------------*/
+
 .footer {
     background-color: #22282E;
 }
-#Footercontainer{
+
+#Footercontainer {
     padding-top: 20px;
     position: relative;
 }
-.vertical a{
+
+.vertical a {
     color: white;
 }
-.footer img{
+
+.footer img {
     width: 300px;
     height: 100%; 
     position: absolute;
