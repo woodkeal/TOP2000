@@ -6,23 +6,26 @@
 }
 
 <div class="list-info">
-    @using (Html.BeginForm())
-    {
-        <input type="text" name="artistName" />
-        <input type="submit" />
-    }
+    <div class="list-info-bar d-flex justify-content-between align-items-center">
+        <span>Lijst @Html.DisplayFor(modelItem => Model.First().Name)</span>
+        @using (Html.BeginForm())
+        {
+            <input type="text" name="artistName" />
+            <input type="submit" />
+        }
+    </div>
     <div class="list">
         <ul>
             <li>
-                <div class="play">
+                <div class="flex-1">
                 </div>
-                <div class="title">
+                <div class="flex-4">
                     titel
                 </div>
-                <div class="artist-name">
+                <div class="flex-3">
                     artiest
                 </div>
-                <div class="year">
+                <div class="flex-1">
                     jaar
                 </div>
             </li>
@@ -34,7 +37,7 @@
         @foreach (var item in Model)
         {
             <li>
-                <div class="list-item play data-play">
+                <div class="list-item play flex-1 justify-content-center">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                     <path d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M344.48,269.57l-128,80
@@ -43,13 +46,13 @@
 	                S349.156,266.641,344.48,269.57z" />
                 </svg>
                 </div>
-                <div class="list-item title data-title">
+                <div class="list-item title flex-4 pl-2">
                     <span>@Html.DisplayFor(modelItem => item.Title)</span>
                 </div>
-                <div class="list-item artist-name data-artist-name">
+                <div class="list-item artist flex-3 pl-2">
                     <span>@Html.DisplayFor(modelItem => item.Name)</span>
                 </div>
-                <div class="list-item year data-year">
+                <div class="list-item year flex-1 pl-2">
                     <span>@Html.DisplayFor(modelItem => item.Year)</span>
                 </div>
             </li>
