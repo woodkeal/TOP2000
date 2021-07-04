@@ -63,6 +63,7 @@ body {
   margin-bottom: 60px;
   color: #ffffff;
   background: #22282E;
+  font-family: 'Poppins', sans-serif;
 }
 .footer {
   position: absolute;
@@ -268,6 +269,36 @@ ul {
     height: 180px;
 }
 
+.difference-text {
+    text-align: center;
+}
+
+.up-pointer::before {
+    content: url(../Images/svg/ui-arrow-solid-up-green.svg);
+    display: block;
+    top: 0;
+    text-align: center;
+}
+
+.down-pointer::before {
+    content: url(../Images/svg/ui-arrow-solid-down-red.svg);
+    display: block;
+    top: 0;
+}
+
+.circle-pointer::before {
+    content: url(../Images/svg/ui-circle-solid-grey.svg);
+    display: block;
+    top: 0;
+    margin: auto;
+}
+
+.new-pointer::before {
+    content: url(../Images/svg/ui-arrow-solid-new-blue.svg);
+    display: block;
+    top: 0;
+    margin: auto;
+}
 /*---------------Footer css -----------------*/
 
 .footer {

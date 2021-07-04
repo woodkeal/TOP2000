@@ -3,12 +3,18 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    string differenceText;
 }
 
 
 <div class="list-info">
-    <div class="list-info-bar d-flex align-items-center">
+    <div class="list-info-bar d-flex justify-content-between align-items-center">
         <span>Lijst @Html.DisplayFor(modelItem => Model.First().ListYear)</span>
+        @using (Html.BeginForm())
+        {
+            <input type="text" name="artistOrTitleName" placeholder="Zoek titel of artiest..." />
+            <input type="submit" />
+        }
     </div>
     <div class="list">
         <ul>
@@ -54,7 +60,26 @@
                     <span>@Html.DisplayFor(modelItem => item.Position)</span>
                 </div>
                 <div class="list-item difference flex-1 justify-content-center pl-2">
-                    <span>1</span>
+                    @{differenceText = item.Difference.Trim(new Char[] { ' ', '-' });
+
+                    }
+                    @if (item.Difference.Contains('-'))
+                    {
+                        <span class="down-pointer difference-text">@differenceText</span>
+                    }
+
+                    else if (item.Difference == "0")
+                    {
+                        <span class="circle-pointer difference-text"></span>
+                    }
+                    else if (item.Difference == "Nieuw")
+                    {
+                        <span class="new-pointer difference-text">@differenceText</span>
+                    }
+                    else
+                    {
+                        <span class="up-pointer difference-text">@differenceText</span>
+                    }
                 </div>
                 <div class="list-item title flex-3 pl-2">
                     <span>@Html.DisplayFor(modelItem => item.Title)</span>
@@ -69,4 +94,3 @@
         }
     </ul>
 </div>
-

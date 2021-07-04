@@ -13,6 +13,7 @@ namespace TOP2000UI.ViewModels
     public class Top2000ViewModel
     {
         public int Position { get; set; }
+        public string Difference { get; set; }
         public string Title { get; set; }
         public string ArtistName { get; set; }
         public int? Year { get; set; }
