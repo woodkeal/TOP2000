@@ -316,7 +316,6 @@ ul {
 
 .custom-footer img {
     width: 300px;
-    height: 100%; 
     position: absolute;
     right: 0;
     transform: scaleX(-1);
