@@ -31,6 +31,7 @@ namespace TOP2000UI.Controllers
             List<Top2000ViewModel> top2000VMList = new List<Top2000ViewModel>();
             TOP2000Context top2000db = new TOP2000Context();
             
+            //uses connetion once before ending all connections
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 if (artistOrTitleName != null) {
@@ -122,6 +123,7 @@ namespace TOP2000UI.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        //gets inpute from view
         [HttpPost]
         public ActionResult Artist(string artistOrTitleName)
         {

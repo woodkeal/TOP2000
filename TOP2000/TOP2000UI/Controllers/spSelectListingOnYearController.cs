@@ -10,32 +10,33 @@ namespace TOP2000UI.Controllers
 {
     public class spSelectListingOnYearController : Controller
     {
-        public IActionResult Index(int listYear)
+        public IActionResult Index(string listYear)
         {
+            string spInputText;
             var dbContext = new TOP2000Context();
             List<spSelectListingOnYear> listingOnYearList = new List<spSelectListingOnYear>();
 
-            if (listYear != 0)
+            //checks if there is a artist name passed on else put "2019" instead
+            if (listYear != null)
             {
-                listingOnYearList = dbContext.spSelectListingOnYear.FromSqlRaw($"spSelectListingOnYear {listYear}").ToList();
+                spInputText = $"spSelectListingOnYear {listYear}";
             }
             else
             {
-                listingOnYearList = dbContext.spSelectListingOnYear.FromSqlRaw($"spSelectListingOnYear 2019").ToList();
+                spInputText = $"spSelectListingOnYear 2019";
             }
 
-
-
+            //calls stored procedure and put it in a list
+            listingOnYearList = dbContext.spSelectListingOnYear.FromSqlRaw(spInputText).ToList();
 
             return View(listingOnYearList);
         }
 
+        //gets inpute from view
         [HttpPost]
         public ActionResult YearList(string listYear)
         {
-
-            int yearlist = Convert.ToInt32(listYear);
-            return View(Index(yearlist));
+            return View(Index(listYear));
         }
     }
 }

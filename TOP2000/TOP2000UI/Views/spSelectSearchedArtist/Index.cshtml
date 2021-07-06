@@ -5,57 +5,158 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="list-info">
-    <div class="list-info-bar d-flex justify-content-between align-items-center">
-        <span>Lijst @Html.DisplayFor(modelItem => Model.First().Name)</span>
-        @using (Html.BeginForm())
-        {
-            <input type="text" name="artistName" />
-            <input type="submit" />
-        }
-    </div>
-    <div class="list">
-        <ul>
-            <li>
-                <div class="flex-1">
-                </div>
-                <div class="flex-4">
-                    titel
-                </div>
-                <div class="flex-3">
-                    artiest
-                </div>
-                <div class="flex-1">
-                    jaar
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
-<div class="list list-data">
-    <ul>
-        @foreach (var item in Model)
-        {
-            <li>
-                <div class="list-item play flex-1 justify-content-center">
-                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                    <path d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M344.48,269.57l-128,80
+<main role="main" class="pb-3 row pt-3">
+    <div class="col-9">
+        <div class="list-info">
+            <div class="list-info-bar d-flex justify-content-between align-items-center">
+                <span>Lijst @Html.DisplayFor(modelItem => Model.First().Name)</span>
+                @using (Html.BeginForm())
+                {
+                    <input type="text" name="artistName" />
+                    <input type="submit" />
+                }
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="flex-1">
+                        </div>
+                        <div class="flex-4">
+                            titel
+                        </div>
+                        <div class="flex-3">
+                            artiest
+                        </div>
+                        <div class="flex-1">
+                            jaar
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="list list-data">
+            <ul>
+                @foreach (var item in Model)
+                {
+                    <li>
+                        <div class="list-item play flex-1 justify-content-center">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M344.48,269.57l-128,80
 	                c-2.59,1.617-5.535,2.43-8.48,2.43c-2.668,0-5.34-0.664-7.758-2.008C195.156,347.172,192,341.82,192,336V176
 	                c0-5.82,3.156-11.172,8.242-13.992c5.086-2.836,11.305-2.664,16.238,0.422l128,80c4.676,2.93,7.52,8.055,7.52,13.57
 	                S349.156,266.641,344.48,269.57z" />
                 </svg>
+                        </div>
+                        <div class="list-item title flex-4 pl-2">
+                            <span>@Html.DisplayFor(modelItem => item.Title)</span>
+                        </div>
+                        <div class="list-item artist flex-3 pl-2">
+                            <span>@Html.DisplayFor(modelItem => item.Name)</span>
+                        </div>
+                        <div class="list-item year flex-1 pl-2">
+                            <span>@Html.DisplayFor(modelItem => item.Year)</span>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+    <div class="col-3">
+        <div id="sideCol">
+            <span class="newsText">Nieuwsartikelen</span>
+            <div class="newsCollum">
+                <!--Artikel 1-->
+                <a href="https://www.nporadio2.nl/top2000/nieuws/31054/elton-john-kondigt-allerlaatste-show-in-nederland-aan">
+                    <div class="newsCard">
+                        <img src="~/Images/newsArticals/Elthon John.jpg">
+                        <div class="arTitle">
+                            <p>Elton John kondigt allerlaatste show in Nederland aan</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--Artikel 2-->
+            <a href="https://www.nporadio2.nl/top2000/nieuws/31028/wie-heeft-de-langste-in-de-top-2000-2020">
+                <div class="newsCard">
+                    <img src="~/Images/newsArticals/TOP2000AR.jpg">
+                    <div class="arTitle">
+                        <p>Wie heeft de langste in de NPO Radio 2 Top 2000?</p>
+                    </div>
                 </div>
-                <div class="list-item title flex-4 pl-2">
-                    <span>@Html.DisplayFor(modelItem => item.Title)</span>
+            </a>
+            <!--Artikel 3-->
+            <a href="https://www.nporadio2.nl/top2000/nieuws/31029/everything-i-do-i-do-it-for-you-van-bryan-adams-had-bijna-niet-bestaan">
+                <div class="newsCard">
+                    <img src="~/Images/newsArticals/Bryan Adams.jpg">
+                    <div class="arTitle">
+                        <p>(Everything I Do) I Do It For You van Bryan Adams had bijna niet bestaan</p>
+                    </div>
                 </div>
-                <div class="list-item artist flex-3 pl-2">
-                    <span>@Html.DisplayFor(modelItem => item.Name)</span>
+            </a>
+            <!--Artikel 4-->
+            <a href="https://www.nporadio2.nl/top2000/nieuws/31001/vijf-albumparels-van-paul-mccartney-die-je-moet-horen">
+                <div class="newsCard">
+                    <img src="~/Images/newsArticals/Paul McCartney.jpg">
+                    <div class="arTitle">
+                        <p>Vijf albumparels van Paul McCartney die je moet horen</p>
+                    </div>
                 </div>
-                <div class="list-item year flex-1 pl-2">
-                    <span>@Html.DisplayFor(modelItem => item.Year)</span>
+            </a>
+            <!--Artikel 5-->
+            <a href="https://www.nporadio2.nl/top2000/nieuws/31011/diana-ross-kondigt-voor-het-eerst-in-vijftien-jaar-nieuw-album-aan">
+                <div class="newsCard">
+                    <img src="~/Images/newsArticals/Diana Ross.jpg">
+                    <div class="arTitle">
+                        <p>Diana Ross kondigt voor het eerst in vijftien jaar nieuw album aan</p>
+                    </div>
                 </div>
-            </li>
-        }
-    </ul>
-</div>
+            </a>
+            <!--Artikel 6-->
+            <a href="https://www.nporadio2.nl/top2000/nieuws/30996/de-vijf-grootste-hits-van-2pac">
+                <div class="newsCard">
+                    <img src="~/Images/newsArticals/2Pac.png">
+                    <div class="arTitle">
+                        <p>De vijf grootste hits van 2Pac</p>
+                    </div>
+                </div>
+            </a>
+            <!--Artikel 7-->
+            <a href="https://www.nporadio2.nl/top2000/nieuws/30968/eric-clapton-niet-op-het-podium-maar-wel-op-tv">
+                <div class="newsCard">
+                    <img src="~/Images/newsArticals/Eric Clapton.jpg">
+                    <div class="arTitle">
+                        <p>Kijktip! Eric Clapton live tijdens Crossroads Guitar Festival</p>
+                    </div>
+                </div>
+            </a>
+            <!--Artikel 8-->
+            <a href="https://www.nporadio2.nl/top2000/nieuws/30956/metallica-trotseert-de-bliksem-op-pinkpop-2014">
+                <div class="newsCard">
+                    <img src="~/Images/newsArticals/Metallica.jpg">
+                    <div class="arTitle">
+                        <p>Metallica trotseert de bliksem op Pinkpop 2014</p>
+                    </div>
+                </div>
+            </a>
+            <!--Artikel 9-->
+            <a href="https://www.nporadio2.nl/top2000/nieuws/30941/prince-speelt-purple-rain-eerste-keer-live-2">
+                <div class="newsCard">
+                    <img src="~/Images/newsArticals/Prince.jpg">
+                    <div class="arTitle">
+                        <p>Prince speelt Purple Rain eerste keer live</p>
+                    </div>
+                </div>
+            </a>
+            <!--Artikel 10-->
+            <a href="https://www.nporadio2.nl/top2000/nieuws/30893/legendarisch-live-iron-maiden-voor-een-kwart-miljoen-uitzinnige-brazilianen">
+                <div class="newsCard">
+                    <img src="~/Images/newsArticals/Iron Maiden.jpg">
+                    <div class="arTitle">
+                        <p>Legendarisch Live: Iron Maiden voor een kwart miljoen uitzinnige Brazilianen</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</main>

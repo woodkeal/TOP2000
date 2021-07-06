@@ -12,19 +12,27 @@ namespace TOP2000UI.Controllers
     {
         public ActionResult Index(string artistName)
         {
+            string spInputText;
             var dbContext = new TOP2000Context();
             List<spSelectSearchedArtist> searchedArtist = new List<spSelectSearchedArtist>();
+
+            //checks if there is a artist name passed on else put a "ABBA" instead
             if (artistName != null)
             {
-                searchedArtist = dbContext.spSelectSearchedArtist.FromSqlRaw($"spSelectSearchedArtist {artistName}").ToList();
+                spInputText = $"spSelectSearchedArtist {artistName}";
+                
             } else
             {
-                searchedArtist = dbContext.spSelectSearchedArtist.FromSqlRaw($"spSelectSearchedArtist abba").ToList();
+                spInputText = $"spSelectSearchedArtist ABBA";
             }
-            
+
+            //calls stored procedure and put it in a list
+            searchedArtist = dbContext.spSelectSearchedArtist.FromSqlRaw(spInputText).ToList();
+
             return View(searchedArtist);
         }
 
+        //gets inpute from view
         [HttpPost]
         public ActionResult Artist(string artistName)
         {

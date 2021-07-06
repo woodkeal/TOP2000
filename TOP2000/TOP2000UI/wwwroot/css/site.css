@@ -301,7 +301,7 @@ ul {
 }
 /*---------------Footer css -----------------*/
 
-.footer {
+.custom-footer {
     background-color: #22282E;
 }
 
@@ -314,7 +314,7 @@ ul {
     color: white;
 }
 
-.footer img {
+.custom-footer img {
     width: 300px;
     height: 100%; 
     position: absolute;

@@ -15,6 +15,6 @@ namespace TOP2000UI.Models
         public int Year { get; set; }
         public string Title { get; set; }
         public int ListYear { get; set; }
-
+        public string Difference { get; set; }
     }
 }

@@ -13,7 +13,10 @@ namespace TOP2000UI.Controllers
         public IActionResult Index()
         {
             var dbContext = new TOP2000Context();
+
+            //calls stored procedure and put it in a list
             var allArtists = dbContext.spSelectAllArtists.FromSqlRaw($"spSelectAllArtists").ToList();
+
             return View(allArtists);
         }
     }
